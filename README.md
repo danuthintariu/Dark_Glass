@@ -31,8 +31,6 @@ Unzip the extension package.
 
 Copy the resulting folder into the /css/skins/ directory of your Rukovoditel installation.
 
-> **Note:** Back up your existing skin files before replacing an earlier installation.
-
 ## 📝 Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for the development history and changes between versions.
@@ -43,6 +41,4 @@ If you encounter a visual issue or have a suggestion, please [open an issue](htt
 
 ## 📄 License
 
-Distributed under the [MIT License](LICENSE).
-
-© [danuthintariu](https://github.com/danuthintariu).
+![GitHub](https://img.shields.io/github/license/danuthintariu/Dark_mode)
