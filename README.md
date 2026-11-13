@@ -1,4 +1,4 @@
-# 🌌 Dark Glass – Rukovoditel Skin
+# 🌌 Dark_Glass – Rukovoditel Skin
 
 A modern **glass-inspired dark skin** for **Rukovoditel**, combining layered surfaces, subtle transparency, soft blur, and refined highlights for a more polished interface.
 
