@@ -9,7 +9,7 @@ Dark Glass is designed to enhance Rukovoditel's appearance while retaining its n
 - **Glass design** — layered dark surfaces, translucent panels, soft shadows, and rounded corners.
 - **Consistent interface** — refined navigation, tables, forms, buttons, dropdowns, dialogs, and tooltips.
 - **Responsive styling** — layouts and controls adapted for desktop and smaller screens.
-- **Native color support** — designed to preserve administrator-defined icon, status, button, and chart colors wherever possible.
+- **Native color support** — designed to preserve administrator-defined icon, status, button, and chart colors.
 - **Standalone skin** — no additional plugin is required for the visual theme.
 
 ## ✅ Tested & Supported Versions
