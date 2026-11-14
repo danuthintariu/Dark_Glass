@@ -23,7 +23,7 @@ Dark Glass is designed to enhance Rukovoditel's appearance while retaining its n
 <img height="120" alt="Dark_Glass_1" src="https://github.com/user-attachments/assets/35197d22-c2c0-4da2-bd02-75919bc9c178" /> <img height="120" alt="Dark_Glass_2" src="https://github.com/user-attachments/assets/a68e769f-8e55-4326-9caa-c0132a9f4242" /> <img height="120" alt="Dark_Glass_3" src="https://github.com/user-attachments/assets/99fa7d8f-f6c7-4c5d-bba2-ecaa8edbdd57" />
 
 ## ⚙️ Installation
-Download the Dark Mode – Rukovoditel Skin archive from this repository.
+Download the Dark_Glass – Rukovoditel Skin archive from this repository.
 
 Unzip the extension package.
 
