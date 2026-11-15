@@ -2,6 +2,16 @@
 
 Notable changes to **Dark_Glass**, a glass-style skin for Rukovoditel.
 
+## v1.5.2 – UI Improvements & Bug Fixes
+
+- Improved Dark Glass styling across forms, buttons, progress bars, labels, and notifications.
+- Redesigned Stages indicators (Triangle, Rectangle, Dot, Circle).
+- Enhanced Form Configuration and Mind Map appearance.
+- Fixed Mind Map fullscreen display.
+- Improved radio buttons, accordions, icon picker, and input controls.
+- Fixed text contrast and various visual inconsistencies.
+- Improved overall UI consistency and compatibility with Rukovoditel 3.7.3.
+
 ## v1.5.1 — UI Refinements
 
 - Polished navigation tabs, buttons, dropdowns, and modal windows.
