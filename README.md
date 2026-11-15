@@ -16,7 +16,7 @@ Dark Glass is designed to enhance Rukovoditel's appearance while retaining its n
 
 | Rukovoditel | Extension |
 |-------------|-----------|
-| 3.7.3       | 3.7.3     |
+| 3.7         | 3.7       |
 
 ## 🖼️ Preview
 
