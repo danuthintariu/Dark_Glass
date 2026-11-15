@@ -1,12 +1,215 @@
-html, body {
-    background-color: #1f2937;
+/*
+ * Dark_Glass - Mind Map
+ * Rukovoditel 3.7.3
+ * Styles for the mind map iframe only.
+ */
+
+:root {
+  --mm-text: #f2f7ff;
+  --mm-text-soft: #d3e0ef;
+  --mm-muted: #9aafc9;
+  --mm-border: rgba(149, 181, 222, .24);
+  --mm-border-strong: rgba(158, 202, 255, .44);
+  --mm-glow: inset 0 1px 0 rgba(236, 248, 255, .12);
+  color-scheme: dark;
 }
 
+/* Canvas */
+html,
+body {
+  color: var(--mm-text-soft);
+  background:
+    radial-gradient(ellipse at 62% 12%, rgba(43, 92, 155, .20), transparent 56%),
+    linear-gradient(145deg, #101d31, #0b1526 62%, #0c1829);
+}
+
+#tip {
+  color: var(--mm-muted);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .45);
+}
+
+#tip a,
+.ui a { color: #83bdff; }
+
+/* Editor sidebar and auxiliary panels */
 .ui {
-    background-color: #111827;
-    color: #e8eef8;
+  color: var(--mm-text-soft);
+  background:
+    linear-gradient(160deg, rgba(32, 51, 78, .97), rgba(13, 25, 43, .98));
+  border-left: 1px solid var(--mm-border);
+  box-shadow:
+    inset 1px 0 0 rgba(236, 248, 255, .07),
+    -12px 0 30px rgba(0, 4, 15, .25);
+  -webkit-backdrop-filter: blur(14px) saturate(135%);
+  backdrop-filter: blur(14px) saturate(135%);
 }
 
-.ui select{
-    background-color: #1f2937;
+.ui h3 {
+  color: var(--mm-text);
+  background: linear-gradient(145deg, #2a486e, #172b48);
+  border-bottom: 1px solid var(--mm-border);
 }
+
+.ui p { color: var(--mm-text-soft); }
+.ui p span { color: var(--mm-text-soft); }
+.ui p.desc { color: var(--mm-muted); }
+
+/* Dropdowns and input fields */
+.ui select,
+.ui input:not([type="checkbox"]):not([type="radio"]) {
+  color: var(--mm-text);
+  background: linear-gradient(145deg, #15263e, #101d31);
+  border: 1px solid var(--mm-border);
+  border-radius: 8px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .18);
+}
+
+.ui select:hover,
+.ui input:hover,
+.ui select:focus,
+.ui input:focus {
+  border-color: var(--mm-border-strong);
+  outline: none;
+}
+
+.ui select option,
+.ui select optgroup {
+  color: var(--mm-text);
+  background: #17263d;
+}
+
+/* Buttons in the mind map editor */
+.ui .btn,
+.ui button.go,
+.ui button.cancel,
+.ui button.remove {
+  color: var(--mm-text-soft);
+  background: linear-gradient(145deg, #2a4568, #162740);
+  border: 1px solid var(--mm-border);
+  border-radius: 8px;
+  box-shadow: var(--mm-glow), 0 3px 10px rgba(0, 0, 0, .18) !important;
+  text-shadow: none;
+  transition: background .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
+.ui .btn:hover,
+.ui .btn:focus,
+.ui button.go:hover,
+.ui button.cancel:hover,
+.ui button.remove:hover {
+  color: var(--mm-text);
+  background: linear-gradient(145deg, #385b86, #213e61);
+  border-color: var(--mm-border-strong);
+  box-shadow: var(--mm-glow), 0 5px 14px rgba(0, 0, 0, .25) !important;
+}
+
+.ui .btn.btn-primary,
+.ui button.go {
+  color: #fff;
+  background: linear-gradient(145deg, #3d7cb7, #26578e);
+  border-color: rgba(151, 201, 255, .50);
+}
+
+/* Keep the original sidebar toggle position and movement */
+.ui #toggle {
+  color: var(--mm-text);
+  background: linear-gradient(145deg, #365a83, #192d49);
+  border: 1px solid var(--mm-border-strong);
+  box-shadow: var(--mm-glow), -3px 2px 12px rgba(0, 0, 0, .32);
+}
+
+.ui #toggle:hover {
+  background: linear-gradient(145deg, #4977a8, #29486d);
+}
+
+/* Color choices and icons - preserve user-selected colors */
+.ui [data-color] {
+  border-radius: 4px;
+  border-color: rgba(230, 241, 255, .13);
+}
+
+.ui [data-color]:hover,
+.ui [data-color]:focus {
+  border-color: #dcecff;
+  box-shadow: 0 0 0 1px rgba(140, 191, 255, .42);
+}
+
+.ui .icons li { color: var(--mm-text-soft); }
+.ui .icons li:hover { color: #fff; }
+
+/* Context menu */
+#menu {
+  color: var(--mm-text-soft);
+  background: linear-gradient(145deg, #243a58, #12233b);
+  border: 1px solid var(--mm-border-strong);
+  border-radius: 10px;
+  box-shadow: 0 14px 35px rgba(0, 4, 15, .40);
+  overflow: hidden;
+}
+
+#menu button { color: var(--mm-text-soft); }
+#menu button:hover,
+#menu button:focus {
+  color: var(--mm-text);
+  background: rgba(107, 166, 239, .18);
+}
+#menu span { border-top-color: var(--mm-border); }
+
+/* Help panel */
+.ui#help {
+  color: var(--mm-text-soft);
+  background: linear-gradient(155deg, rgba(37, 58, 85, .98), rgba(15, 28, 47, .98));
+  border-right: 1px solid var(--mm-border);
+}
+
+/* Mind map nodes - preserve configured outline/branch colors */
+.shape-box > .content,
+.shape-ellipse > .content {
+  color: var(--mm-text);
+  background-color: #243750;
+  background-image: linear-gradient(180deg,
+    rgba(255, 255, 255, .16),
+    rgba(255, 255, 255, .02) 48%,
+    rgba(0, 0, 0, .12));
+  border-radius: 8px;
+  box-shadow: var(--mm-glow), 0 4px 12px rgba(0, 0, 0, .19);
+}
+
+.shape-ellipse > .content { border-radius: 50%; }
+
+/* Selected node - no light yellow background */
+.item.current > .content {
+  color: #fff;
+  background-color: #345d8a;
+  box-shadow:
+    var(--mm-glow),
+    0 0 0 3px rgba(120, 182, 255, .15),
+    0 6px 18px rgba(0, 0, 0, .30);
+}
+
+/* Keep underline-style nodes free of a box */
+.shape-underline > .content,
+.item.current.shape-underline > .content {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Popovers in map view */
+.popover {
+  color: var(--mm-text-soft);
+  background: #182a43;
+  border: 1px solid var(--mm-border);
+  border-radius: 10px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, .30);
+}
+
+.popover-title {
+  color: var(--mm-text);
+  background: #243a57;
+  border-bottom-color: var(--mm-border);
+}
+
+.popover.top > .arrow::after { border-top-color: #182a43; }
+.popover.bottom > .arrow::after { border-bottom-color: #182a43; }
+.popover.left > .arrow::after { border-left-color: #182a43; }
+.popover.right > .arrow::after { border-right-color: #182a43; }
