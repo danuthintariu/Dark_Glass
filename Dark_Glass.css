@@ -2378,16 +2378,10 @@ ul.listing-mobile>li {
 .progress:not(#bar) > .progress-bar {
   height: 100%;
   color: var(--dg-text-bright);
-  background:
-    linear-gradient(180deg,
-      rgba(255, 255, 255, .19) 0%,
-      rgba(255, 255, 255, .04) 46%,
-      rgba(0, 0, 0, .13) 100%),
-    linear-gradient(110deg,
-      #4c92d1 0%,
-      #326da9 48%,
-      #234e84 100%) !important;
-  background-color: transparent !important;
+  background-image: linear-gradient(180deg,
+    rgba(255, 255, 255, .19) 0%,
+    rgba(255, 255, 255, .04) 46%,
+    rgba(0, 0, 0, .13) 100%) !important;
   border-right: 1px solid rgba(162, 211, 255, .42);
   border-radius: 8px;
   box-shadow:
@@ -3389,11 +3383,6 @@ div.radio input[type="radio"] {
 }
 
 /* Toggle icon */
-.navbar-items .navbar-toggle .icon-bar {
-    background-color: #dce8f8 !important;
-}
-
-
 .navbar-items .navbar-toggle .icon-bar {
     background-color: #dce8f8 !important;
 }

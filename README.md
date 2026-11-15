@@ -16,7 +16,7 @@ Dark Glass is designed to enhance Rukovoditel's appearance while retaining its n
 
 | Rukovoditel | Extension |
 |-------------|-----------|
-| 3.7         | 3.7       |
+| 3.7.3       | 3.7.3     |
 
 ## 🖼️ Preview
 
@@ -39,4 +39,4 @@ If you encounter a visual issue or have a suggestion, please [open an issue](htt
 
 ## 📄 License
 
-![GitHub](https://img.shields.io/github/license/danuthintariu/Dark_mode)
+![License](https://img.shields.io/github/license/danuthintariu/Dark_Glass)
