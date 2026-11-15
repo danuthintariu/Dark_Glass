@@ -848,9 +848,13 @@ input[type="file"]::file-selector-button:hover {
   backdrop-filter: blur(15px);
 }
 
-.portlet-body-actions { border-bottom: 1px solid #0f172a !important; }
+.porlet-body-actions { 
+  border-bottom: 1px solid #0f172a !important; 
+}
 
-.portlet > .portlet-title > .caption { color: #e8eef8; }
+.portlet > .portlet-title > .caption { 
+  color: #e8eef8; 
+}
 
 .panel {
   background: linear-gradient(140deg, rgba(39, 55, 78, .86), rgba(20, 32, 51, .84));
