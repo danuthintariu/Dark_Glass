@@ -2,6 +2,16 @@
 
 Notable changes to **Dark_Glass**, a glass-style skin for Rukovoditel.
 
+## v1.5.3 — Reports & UI Refinements
+
+- Expanded Dark Glass styling across WebDataRocks Pivot tables, dialogs, filters, aggregation menus, and calculated values.
+- Unified Highcharts appearance across reports, dashboard widgets, and chart positions.
+- Improved chart backgrounds, labels, legends, gridlines, tooltips, and export menus.
+- Fixed Kanban column headers displaying light backgrounds when scrolling.
+- Improved datepicker contrast, selected date ranges, and rounded corners.
+- Refined table headers, sorting indicators, action buttons, and form controls.
+- Improved visual consistency, spacing, and contrast throughout the interface.
+
 ## v1.5.2 – UI Improvements & Bug Fixes
 
 - Improved Dark Glass styling across forms, buttons, progress bars, labels, and notifications.
