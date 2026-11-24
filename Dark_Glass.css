@@ -3191,10 +3191,10 @@ ul.listing-mobile>li {
 
 .label.label-default:not([style*="background"]),
 .label.label-success:not([style*="background"]) {
-  display: inline-flex;
+  /*display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 4px 9px;
+  padding: 4px 9px;*/
   border: 1px solid rgba(149, 192, 243, .28);
   border-radius: 8px;
   font-size: 11px;
